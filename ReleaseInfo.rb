@@ -11,10 +11,10 @@ class ReleaseInfo
       @rc_hash[tag_rc.gsub('rc','').to_sym] += 1
     end
   end
+
   result = Hash[@rc_hash.sort]
-  
+
 	result.each do |key, value| 
 		puts "RC #{key} " + "*" * value.to_i
 	end
-
 end
