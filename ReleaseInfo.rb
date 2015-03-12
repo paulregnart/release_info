@@ -8,7 +8,7 @@ class ReleaseInfo
   tags.each do |tag|
     if tag.include?(".rc")
       tag_rc = tag.split(".").last
-      @rc_hash[tag_rc.gsub('rc','').to_sym] += 1
+      @rc_hash[tag_rc.gsub('rc','').to_i] += 1
     end
   end
 
