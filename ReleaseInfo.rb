@@ -6,7 +6,7 @@ class ReleaseInfo
   @rc_hash = Hash.new{|h,k| h[k] = 0 }
 
   tags.each do |tag|
-    if tag.include?("rc")
+    if tag.include?(".rc")
       tag_rc = tag.split(".").last
       @rc_hash[tag_rc.to_sym] += 1
     end
