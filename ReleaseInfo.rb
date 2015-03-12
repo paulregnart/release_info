@@ -14,7 +14,6 @@ class ReleaseInfo
   result = Hash[@rc_hash.sort]
   
 	result.each do |key, value| 
-		#puts "#{key} : *" * value.to_i
 		puts "RC #{key} " + "*" * value.to_i
 	end
 
