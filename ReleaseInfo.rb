@@ -8,8 +8,14 @@ class ReleaseInfo
   tags.each do |tag|
     if tag.include?(".rc")
       tag_rc = tag.split(".").last
-      @rc_hash[tag_rc.to_sym] += 1
+      @rc_hash[tag_rc.gsub('rc','').to_sym] += 1
     end
   end
-  puts Hash[@rc_hash.sort]
+  result = Hash[@rc_hash.sort]
+  
+	result.each do |key, value| 
+		#puts "#{key} : *" * value.to_i
+		puts "RC #{key} " + "*" * value.to_i
+	end
+
 end
