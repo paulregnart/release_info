@@ -11,5 +11,5 @@ class ReleaseInfo
       @rc_hash[tag_rc.to_sym] += 1
     end
   end
-  puts @rc_hash
+  puts Hash[@rc_hash.sort]
 end
