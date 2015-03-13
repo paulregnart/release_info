@@ -5,7 +5,7 @@ The aim is to see how often a version is released with first time quality (RC1)
 
 ##Example Output
 
-* There are 50 tags for this repo.
+* There are 40 tags for this repo.
 * RC 1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 * RC 2 xxxxxxxxx
 * RC 3 xxxxx
